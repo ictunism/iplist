@@ -46,3 +46,11 @@ For automatic updates, you can implement this script as a GitHub Action:
 3.  Create an `update_ips.yml` file within that directory and paste in the provided configuration code.
 
 After you commit, GitHub will automatically run the script on schedule, keeping your IP list relevant without any manual intervention.
+
+-----
+
+### Credits
+
+This project uses IP address data collected and maintained by IPVerse. We would like to extend our sincere gratitude to the IPVerse project for providing this valuable resource.
+
+IPVerse: https://github.com/ipverse/rir-ip
