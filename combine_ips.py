@@ -26,7 +26,7 @@ def combine_and_save_ips():
     """Menggabungkan IP dari CloudFlare dan IPVerse RIR-IP Indonesia."""
     cloudflare_url = "https://www.cloudflare.com/ips-v4"
     ipverse_url = "https://github.com/ipverse/rir-ip/raw/master/country/id/ipv4-aggregated.txt"
-    output_file = "firewall_combined_ips.txt"
+    output_file = "cf_ipverse_id.txt"
 
     # Periksa keberadaan file dan hapus jika sudah ada
     if os.path.exists(output_file):
