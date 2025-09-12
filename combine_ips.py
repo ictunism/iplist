@@ -1,5 +1,6 @@
 import requests
 import os
+from datetime import datetime
 
 def get_ip_list_from_url(url):
     """
@@ -46,6 +47,8 @@ def combine_and_save_ips():
     with open(output_file, 'w') as f:
         for ip in sorted(list(combined_ips)):
             f.write(f"{ip}\n")
+        # Menambahkan timestamp ke file
+        f.write(f"# Updated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
     
     print(f"\nSelesai! {len(combined_ips)} IP range unik telah disimpan ke {output_file}")
 

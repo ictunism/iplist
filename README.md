@@ -16,7 +16,7 @@ The Python script (`combine_ips.py`) performs the following steps:
 
 1.  **Data Retrieval**: It downloads the latest IPv4 address lists from the official CloudFlare URL and the Regional Internet Registry (RIR) data for Indonesia from IPVerse.
 2.  **Merge and Clean**: It combines both lists, removes any empty lines or comments, and eliminates duplicate IP addresses.
-3.  **Save**: It saves the combined list into a single file named **`firewall_combined_ips.txt`**.
+3.  **Save**: It saves the combined list into a single file named **`cf_ipverse_id.txt`**.
 4.  **Automation**: A GitHub Action is scheduled to run the script **twice a day**, ensuring your IP list is always up-to-date.
 
 -----
