@@ -5,7 +5,8 @@ on:
     # Jadwalkan agar action berjalan setiap pukul 00:00 dan 12:00 (tengah hari) UTC
     - cron: '0 0,12 * * *'
   workflow_dispatch:
-    # Mengizinkan eksekusi manual dari tab "Actions" di GitHub
+permissions:
+  contents: write
 
 jobs:
   update-ips:
